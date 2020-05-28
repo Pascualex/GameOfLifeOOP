@@ -1,6 +1,6 @@
-#include "FireAgent.h"
-#include "Board.h"
-#include "Auxiliar.h"
+#include "Engine/Agents/FireAgent.h"
+#include "Engine/Board.h"
+#include "Auxiliar/Auxiliar.h"
 
 FireAgent::FireAgent(int x, int y):
 AgeCountingAgent(x, y) { }

@@ -1,6 +1,6 @@
-#include "GrassAgent.h"
-#include "Board.h"
-#include "Auxiliar.h"
+#include "Engine/Agents/GrassAgent.h"
+#include "Engine/Board.h"
+#include "Auxiliar/Auxiliar.h"
 
 GrassAgent::GrassAgent(int x, int y):
 AgeCountingAgent(x, y) { }

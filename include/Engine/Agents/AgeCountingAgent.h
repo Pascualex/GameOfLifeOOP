@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Agent.h"
+#include "Engine/Agents/Agent.h"
 
 class AgeCountingAgent : public Agent {
 protected:
@@ -9,4 +9,3 @@ public:
 	AgeCountingAgent(int x, int y);
 	virtual bool step() override;
 };
-

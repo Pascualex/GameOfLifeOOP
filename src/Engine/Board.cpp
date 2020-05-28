@@ -1,5 +1,5 @@
-#include "Board.h"
-#include "Agent.h"
+#include "Engine/Board.h"
+#include "Engine/Agents/Agent.h"
 #include <iostream>
 #include <algorithm>
 #include <stdexcept>

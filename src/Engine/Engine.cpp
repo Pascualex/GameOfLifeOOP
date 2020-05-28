@@ -1,5 +1,5 @@
-#include "Engine.h"
-#include "SystemAux.h"
+#include "Engine/Engine.h"
+#include "Auxiliar/SystemPrint.h"
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -102,14 +102,14 @@ void Engine::print_frame() {
 	std::chrono::time_point<std::chrono::system_clock> current_time = std::chrono::system_clock::now();
 	int current_step_delay = (current_time - next_step_time) / step_duration;
 
-	SystemAux::reset_cursor();
-	SystemAux::clear_line();
+	SystemPrint::reset_cursor();
+	SystemPrint::clear_line();
 	std::cout << "Step count: " << current_step << std::endl;
-	SystemAux::clear_line();
+	SystemPrint::clear_line();
 	std::cout << "Step delay: " << current_step_delay << std::endl;
-	SystemAux::clear_line();
+	SystemPrint::clear_line();
 	std::cout << "Agents: " << board.get_agents()->size() << std::endl;
-	SystemAux::clear_line();
+	SystemPrint::clear_line();
 	std::cout << "Delayed spawns: " << delayed_spawns.size() << std::endl;
 	board.print();
 }

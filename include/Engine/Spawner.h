@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Agent.h"
-#include "Board.h"
+#include "Engine/Agents/Agent.h"
+#include "Engine/Board.h"
 
 class Spawner {
 private:

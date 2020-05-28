@@ -24,4 +24,3 @@ public:
 	void clear_killed();
 	void print();
 };
-

@@ -18,12 +18,39 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Auxiliar\Auxiliar.h" />
+    <ClInclude Include="include\Auxiliar\Debug.h" />
+    <ClInclude Include="include\Auxiliar\SystemPrint.h" />
+    <ClInclude Include="include\Engine\Agents\AgeCountingAgent.h" />
+    <ClInclude Include="include\Engine\Agents\Agent.h" />
+    <ClInclude Include="include\Engine\Agents\FireAgent.h" />
+    <ClInclude Include="include\Engine\Agents\GrassAgent.h" />
+    <ClInclude Include="include\Engine\Agents\TestAgent.h" />
+    <ClInclude Include="include\Engine\Board.h" />
+    <ClInclude Include="include\Engine\Engine.h" />
+    <ClInclude Include="include\Engine\Spawner.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Auxiliar\Auxiliar.cpp" />
+    <ClCompile Include="src\Auxiliar\SystemPrint.cpp" />
+    <ClCompile Include="src\Engine\Agents\AgeCountingAgent.cpp" />
+    <ClCompile Include="src\Engine\Agents\Agent.cpp" />
+    <ClCompile Include="src\Engine\Agents\FireAgent.cpp" />
+    <ClCompile Include="src\Engine\Agents\GrassAgent.cpp" />
+    <ClCompile Include="src\Engine\Agents\TestAgent.cpp" />
+    <ClCompile Include="src\Engine\Board.cpp" />
+    <ClCompile Include="src\Engine\Engine.cpp" />
+    <ClCompile Include="src\Engine\Spawner.cpp" />
+    <ClCompile Include="src\GameOfLife.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{99170327-1807-496A-9602-F73585C87C9D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>GameOfLife</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>GameOfLife</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -104,6 +131,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,35 +174,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="AgeCountingAgent.cpp" />
-    <ClCompile Include="Agent.cpp" />
-    <ClCompile Include="Board.cpp" />
-    <ClCompile Include="Engine.cpp" />
-    <ClCompile Include="FireAgent.cpp" />
-    <ClCompile Include="GameOfLife.cpp" />
-    <ClCompile Include="GrassAgent.cpp" />
-    <ClCompile Include="Auxiliar.cpp" />
-    <ClCompile Include="Spawner.cpp" />
-    <ClCompile Include="SystemAux.cpp" />
-    <ClCompile Include="TestAgent.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="AgeCountingAgent.h" />
-    <ClInclude Include="Agent.h" />
-    <ClInclude Include="Board.h" />
-    <ClInclude Include="Engine.h" />
-    <ClInclude Include="FireAgent.h" />
-    <ClInclude Include="GrassAgent.h" />
-    <ClInclude Include="Auxiliar.h" />
-    <ClInclude Include="Debug.h" />
-    <ClInclude Include="Spawner.h" />
-    <ClInclude Include="SystemAux.h" />
-    <ClInclude Include="TestAgent.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="GameOfLife.rc" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

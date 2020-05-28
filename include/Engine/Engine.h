@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Agent.h"
-#include "Spawner.h"
-#include "Board.h"
+#include "Engine/Agents/Agent.h"
+#include "Engine/Board.h"
+#include "Engine/Spawner.h"
 #include <vector>
 #include <queue>
 #include <utility>

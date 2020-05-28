@@ -9,84 +9,75 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameOfLife.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Engine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Board.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Agent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TestAgent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SystemAux.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FireAgent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GrassAgent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Auxiliar.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AgeCountingAgent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Spawner.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Engine.h">
+    <ClInclude Include="include\Auxiliar\Auxiliar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Board.h">
+    <ClInclude Include="include\Auxiliar\Debug.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Agent.h">
+    <ClInclude Include="include\Auxiliar\SystemPrint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TestAgent.h">
+    <ClInclude Include="include\Engine\Board.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SystemAux.h">
+    <ClInclude Include="include\Engine\Engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FireAgent.h">
+    <ClInclude Include="include\Engine\Spawner.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GrassAgent.h">
+    <ClInclude Include="include\Engine\Agents\AgeCountingAgent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Auxiliar.h">
+    <ClInclude Include="include\Engine\Agents\Agent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AgeCountingAgent.h">
+    <ClInclude Include="include\Engine\Agents\FireAgent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Spawner.h">
+    <ClInclude Include="include\Engine\Agents\GrassAgent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Debug.h">
+    <ClInclude Include="include\Engine\Agents\TestAgent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="GameOfLife.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
+    <ClCompile Include="src\GameOfLife.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Auxiliar\Auxiliar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Auxiliar\SystemPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Board.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Spawner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Agents\AgeCountingAgent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Agents\Agent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Agents\FireAgent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Agents\GrassAgent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Agents\TestAgent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,5 +1,5 @@
-#include "Agent.h"
-#include "Board.h"
+#include "Engine/Agents/Agent.h"
+#include "Engine/Board.h"
 #include <stdexcept>
 
 Agent::Agent(int x, int y) {

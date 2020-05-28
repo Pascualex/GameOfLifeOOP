@@ -1,5 +1,5 @@
-#include "TestAgent.h"
-#include "Board.h"
+#include "Engine/Agents/TestAgent.h"
+#include "Engine/Board.h"
 
 TestAgent::TestAgent(int x, int y):
 Agent(x, y) { }

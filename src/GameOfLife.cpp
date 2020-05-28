@@ -1,8 +1,8 @@
-﻿#include "Engine.h"
-#include "GrassAgent.h"
-#include "FireAgent.h"
-#include "Spawner.h"
-#include "Debug.h"
+﻿#include "Engine/Engine.h"
+#include "Engine/Spawner.h"
+#include "Engine/Agents/GrassAgent.h"
+#include "Engine/Agents/FireAgent.h"
+#include "Auxiliar/Debug.h"
 #include <iostream>
 #include <string>
 #include <signal.h>

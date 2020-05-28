@@ -1,4 +1,4 @@
-#include "Auxiliar.h"
+#include "Auxiliar/Auxiliar.h"
 #include <algorithm>
 
 IntVector2D Auxiliar::directions = {

@@ -1,7 +1,7 @@
-#include "SystemAux.h"
+#include "Auxiliar/SystemPrint.h"
 #include <iostream>
 
-void SystemAux::clear_line() {
+void SystemPrint::clear_line() {
     for (int i = 0; i < 80; i++) {
         std::cout << ' ';
     }
@@ -12,13 +12,13 @@ void SystemAux::clear_line() {
 
 #include <windows.h>
 
-void SystemAux::reset_cursor() {
+void SystemPrint::reset_cursor() {
     COORD tl = { 0, 0 };
     HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleCursorPosition(console, tl);
 }
 
-void SystemAux::clear_screen() {
+void SystemPrint::clear_screen() {
     COORD tl = { 0, 0 };
     HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_SCREEN_BUFFER_INFO s;
@@ -31,13 +31,13 @@ void SystemAux::clear_screen() {
 
 #else
 
-void SystemAux::reset_cursor() {
+void SystemPrint::reset_cursor() {
     for (int i = 0; i < 50; i++) {
         std::cout << std::endl;
     }
 }
 
-void SystemAux::clear_screen() {
+void SystemPrint::clear_screen() {
     for (int i = 0; i < 50; i++) {
         std::cout << std::endl;
     }

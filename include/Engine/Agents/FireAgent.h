@@ -1,6 +1,6 @@
 #pragma once
 
-#include "AgeCountingAgent.h"
+#include "Engine/Agents/AgeCountingAgent.h"
 
 class FireAgent : public AgeCountingAgent {
 public:
@@ -11,4 +11,3 @@ public:
 	Agent *clone() override;
 	Agent *clone(int x, int y) override;
 };
-

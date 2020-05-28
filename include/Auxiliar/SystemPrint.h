@@ -1,6 +1,6 @@
 #pragma once
 
-class SystemAux {
+class SystemPrint {
 public:
 	static void reset_cursor();
 	static void clear_line();

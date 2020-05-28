@@ -1,11 +1,10 @@
 #pragma once
 
-#include "Agent.h"
-#include <string>
+#include "Engine/Agents/AgeCountingAgent.h"
 
-class TestAgent : public Agent {
+class GrassAgent : public AgeCountingAgent {
 public:
-	TestAgent(int x, int y);
+	GrassAgent(int x, int y);
 	bool step() override;
 	char get_icon() override;
 	std::string get_type() override;

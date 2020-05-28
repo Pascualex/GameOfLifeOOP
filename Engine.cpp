@@ -105,6 +105,7 @@ void Engine::print_frame() {
 	SystemAux::reset_cursor();
 	SystemAux::clear_line();
 	std::cout << "Step count: " << current_step << std::endl;
+	SystemAux::clear_line();
 	std::cout << "Step delay: " << current_step_delay << std::endl;
 	SystemAux::clear_line();
 	std::cout << "Agents: " << board.get_agents()->size() << std::endl;

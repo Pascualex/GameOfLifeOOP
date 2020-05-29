@@ -25,9 +25,13 @@ void Spawner::step() {
 	if (board == NULL) throw std::logic_error("Spawner (step): board can't be null");
 
 	steps_until_spawn--;
-	if (steps_until_spawn == 0 && (force || board->is_empty_at(agent->getX(), agent->getY()))) {
-		spawn();
-		steps_until_spawn = interval;
+	if (steps_until_spawn == 0) {
+		if (force || board->is_empty_at(agent->getX(), agent->getY())) {
+			spawn();
+			steps_until_spawn = interval;
+		} else {
+			steps_until_spawn = 1;
+		}
 	}
 }
 
